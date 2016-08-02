@@ -1,0 +1,26 @@
+{
+  "name": "cnbc",
+  "version": "1.0.0",
+  "description": "cnbc microsite",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tracy Lee",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamtracy/cnbc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamtracy/cnbc/issues"
+  },
+  "homepage": "https://github.com/iamtracy/cnbc#readme"
+}

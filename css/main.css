@@ -1,0 +1,367 @@
+/***********************
+
+Body
+
+***********************/
+a{
+  color: #0079C1;
+}
+section{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.m-b-2 {
+    margin-bottom: 2rem!important;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start:  0;
+}
+.text-muted {
+    color: #a7abb1;
+}
+/***********************
+
+Navigation
+
+***********************/
+nav{
+	  position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    z-index: 99;
+    -webkit-transition: 0.25s all 0s;
+    transition: 0.25s all 0s;
+    box-shadow: 0 0 6px rgba(0,0,0,0);
+    background: rgba(0,0,0,0.6);
+}
+.navbar {
+    padding: .8rem 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.65);
+}
+.active{
+  color: red;
+}
+/***********************
+
+Top Banner
+
+***********************/
+.bg-info {
+    background:linear-gradient(rgba(0, 121 ,193 , .625), rgba(0, 121 ,193 , .625)), url("../img/banner.jpg"); 
+    background-color: rgba(25, 159, 206, 0.75);
+    background-position: 60% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.register-now{
+  background: #fb7521;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.jumbotron {
+    padding: 5rem 2rem;
+}
+
+/***********************
+
+Speakers
+
+***********************/
+
+.secondary-speakers{
+  background-color: #eeeeed;
+  /*padding-top: 3rem;*/
+}
+
+/***********************
+
+Countdown Styles
+
+***********************/
+.t-mobile-area{
+  position: relative;
+  border: 6px solid #e11075;
+  /*margin-top: .5rem;
+  margin-bottom: 2.3rem;*/
+  box-sizing: border-box;
+}
+
+.t-mobile-logo{
+  margin: auto;
+  position: absolute;
+  top: -200px; left: 0; bottom: 0; right: 0;
+}
+
+ul#countdown {
+  list-style: none;
+  margin: .75rem 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+ul#countdown li { display: inline-block; }
+ul#countdown li span {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 5.2rem;
+}
+ul#countdown li.seperator {
+  font-size: 4.5rem;
+  line-height: 70px;
+  vertical-align: top;
+}
+ul#countdown li p {
+  color: #a7abb1;
+  font-size: 1.9rem;
+}
+
+/***********************
+
+WHAT PEOPLE ARE SAYING
+
+***********************/
+.main-component .component-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.quotesContainer .quoteBox {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0079C1;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    min-height: 310px;
+}
+
+.quotesContainer .quoteBox.inverse {
+    color: #000;
+    background-color: #d0dd27;
+}
+.quotesContainer .quoteBox.inverse:after {
+    border-color: transparent #d0dd27;
+}
+.quotesContainer .quoteBox .who {
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.quotesContainer .quoteBox .what {
+    font-size: 15px;
+    color: #d0dd27;
+}
+.quotesContainer .quoteBox.inverse .what {
+    color: #0079C1;
+}
+
+.quotesContainer .quoteBox:after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    right: 20px;
+    border: 0;
+    border-right-width: 42px;
+    border-bottom-width: 42px;
+    border-style: solid;
+    border-color: transparent #0079C1;
+    display: block;
+    width: 0;
+}
+
+/***********************
+
+Cards
+
+***********************/
+.card-deck-wrapper{
+  /*margin-bottom: 2.25rem;*/
+}
+.card-img-top{
+  width:100%;
+  height:auto;
+}
+
+/***********************
+
+Agenda
+
+***********************/
+.presentation-time{
+  background-color: #0079C1;
+}
+
+/***********************
+
+Footer
+
+***********************/
+footer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #191818;
+}
+.footer-desc{
+  color: #fff;
+}
+ul.privacy{
+  margin-top: 2rem;
+  color: #fff;
+}
+ul.privacy li{
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+/***********************
+
+Modal
+
+***********************/
+.modal-title {
+  color: #fff;  
+}
+.modal-register{
+  background-color: #0079C1;
+}
+
+/***********************
+
+Responsive layout
+
+***********************/
+
+@media (max-width:1000px) {
+    .banner-title {
+      padding-top: 10rem;
+			padding-bottom: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /*.t-mobile-logo {
+      top: -516px;
+    }*/
+}
+@media (max-width: 680px) {
+    .t-mobile-logo {
+      top: -205px;
+    }
+}
+@media (min-width: 510px) and (max-width: 679px) {
+    .t-mobile-logo {
+      top: -208px;
+    }
+    .jumbotron {
+      padding: 4rem 1rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 509px) {
+    .t-mobile-logo {
+      top: -315px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 319px) {
+    .t-mobile-logo {
+      top: -430px;
+    }
+}
+
+@media (max-width: 540px) {
+    .no-padding-xs {
+      padding-right: 0!important;
+      padding-left: 0!important;
+    }
+    .jumbotron {
+      padding: 4rem 2rem;
+      margin-bottom: 0;
+    }
+    .btn-group-lg>.btn, .btn-lg{
+      padding: .75rem .5rem;
+      font-size: 1rem;
+      line-height: 1.333333;
+      border-radius: .3rem;
+    }
+}
+@media (max-width: 360px) {
+    .btn-group-lg>.btn, .btn-lg {
+      padding: .65rem .75rem;
+      font-size: 1.1rem;
+    }
+    .display-4 {
+      font-size: 2.8rem;
+    }
+}
+@media (max-width: 320px) {
+    .btn-group-lg>.btn, .btn-lg {
+      padding: .55rem .55rem;
+    }
+}
+
+@media (max-width:680px) {
+    ul#countdown {
+		  list-style: none;
+		  margin: 2rem 0;
+		  padding: 0;
+		  display: block;
+		  text-align: center;
+		}
+		ul#countdown li { display: inline-block; }
+		ul#countdown li span {
+		  font-size: 3rem;
+		  font-weight: 300;
+		  line-height: 3.2rem;
+		}
+		ul#countdown li.seperator {
+		  font-size: 3rem;
+		  line-height: 3.2rem;
+		  vertical-align: top;
+		}
+		ul#countdown li p {
+		  font-size: 1.8rem;
+		}
+}
+
+@media (min-width: 544px){
+	.card-deck .card {
+    /*width: 45%;*/
+    margin-right: .9375rem;
+    margin-left: .9375rem;
+    padding-left: 0;
+    padding-right: 0;
+	}
+  .card-deck {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 1.12rem 0;
+  }
+  .p-l-0 {
+     padding-left: initial; 
+}
+}
+
