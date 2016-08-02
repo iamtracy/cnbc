@@ -87,13 +87,18 @@ Top Banner
 }
 
 .jumbotron {
-  padding: 5rem 2rem;
+  padding: 4.5rem 0 .5rem;
   margin-bottom: 0;
 }
 .header-img{
   max-width: 600px;
 }
-
+.innovate{
+  color: #000;
+}
+.boston-virtual{
+  font-weight: 600;
+}
 /***********************
 
 Speakers
