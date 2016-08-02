@@ -1,0 +1,14 @@
+
+
+@media screen and (max-width: 480px) and (min-width: 321px){
+	.LogoHeader {
+    height: auto !important; 
+    display: initial !important; 
+    width: auto !important;
+	}
+}
+
+.LogoHeader img{
+	width: 100% !important;
+	height: auto !important;
+}

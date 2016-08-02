@@ -4,11 +4,12 @@ Body
 
 ***********************/
 a{
-  color: #0079C1;
+  color: #e11075;
 }
 section{
     padding: 3rem 0;
 }
+
 .m-b-2 {
     margin-bottom: 2rem!important;
 }
@@ -23,6 +24,9 @@ ul, menu, dir {
 }
 .text-muted {
     color: #a7abb1;
+}
+.brand-green{
+  color: #d0dd28;
 }
 /***********************
 
@@ -80,24 +84,24 @@ Top Banner
 .register-now{
   background: #e11075;
 }
-
 .row {
     margin-right: 0;
     margin-left: 0;
 }
-
 .jumbotron {
   padding: 4.5rem 0 .5rem;
   margin-bottom: 0;
-}
-.header-img{
-  max-width: 600px;
 }
 .innovate{
   color: #000;
 }
 .boston-virtual{
   font-weight: 600;
+}
+.header-img{
+  max-width: 600px;
+  width: 100%;
+  min-width: 240px;
 }
 /***********************
 
@@ -251,12 +255,12 @@ footer{
 }
 ul.privacy{
   margin-top: 2rem;
-  color: #fff;
 }
 ul.privacy li{
   display: inline-block;
   padding-right: 1rem;
 }
+ul.privacy,
 ul.privacy a{
   color: #d0dd28;
 }
@@ -293,7 +297,7 @@ Responsive layout
 }
 @media (max-width: 680px) {
     .t-mobile-logo {
-      top: -205px;
+      top: -340px;
     }
 }
 @media (min-width: 510px) and (max-width: 679px) {
@@ -304,15 +308,15 @@ Responsive layout
       padding: 4rem 1rem;
     }
 }
-@media (min-width: 320px) and (max-width: 509px) {
+@media (min-width: 320px) and (max-width: 465px) {
     .t-mobile-logo {
-      top: -315px;
+      top: -320px;
     }
 }
 
 @media (min-width: 0) and (max-width: 319px) {
     .t-mobile-logo {
-      top: -430px;
+      top: -320px;
     }
 }
 
