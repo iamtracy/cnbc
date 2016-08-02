@@ -7,8 +7,7 @@ a{
   color: #0079C1;
 }
 section{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 .m-b-2 {
     margin-bottom: 2rem!important;
@@ -50,9 +49,21 @@ nav{
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.65);
 }
-.active{
-  color: red;
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .active>.nav-link:focus, 
+.navbar-dark .navbar-nav .active>.nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.active:focus, 
+.navbar-dark .navbar-nav .nav-link.active:hover, 
+.navbar-dark .navbar-nav .nav-link.open, 
+.navbar-dark .navbar-nav .nav-link.open:focus, 
+.navbar-dark .navbar-nav .nav-link.open:hover, 
+.navbar-dark .navbar-nav .open>.nav-link,
+ .navbar-dark .navbar-nav .open>.nav-link:focus, 
+.navbar-dark .navbar-nav .open>.nav-link:hover{
+  color: #d0dd28;
 }
+
 /***********************
 
 Top Banner
@@ -64,9 +75,10 @@ Top Banner
     background-position: 60% 60%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 .register-now{
-  background: #fb7521;
+  background: #e11075;
 }
 
 .row {
@@ -75,7 +87,11 @@ Top Banner
 }
 
 .jumbotron {
-    padding: 5rem 2rem;
+  padding: 5rem 2rem;
+  margin-bottom: 0;
+}
+.header-img{
+  max-width: 600px;
 }
 
 /***********************
@@ -212,7 +228,7 @@ Agenda
 
 ***********************/
 .presentation-time{
-  background-color: #0079C1;
+  background-color: #e11075;
 }
 
 /***********************

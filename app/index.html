@@ -12,20 +12,19 @@
 	<nav class="navbar navbar-dark nav-color navbar-fixed-top navbar-collapse">
 		<div class="container">
 			<div id="menu" class="col-xs-12">
-				<ul class="nav navbar-nav">
-					<li class="nav-item">
+				<ul class="nav navbar-nav"> 
+					<li class="nav-item"> 
 						<a data-smooth="smooth" class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<!-- <li class="nav-item">
-						<a data-smooth="smooth" class="nav-link" href="#about">About</a>
-					</li> -->
 					<li class="nav-item">
 						<a data-smooth="smooth" class="nav-link" href="#speakers">Speakers</a>
 					</li>
 					<li class="nav-item">
-						<a data-smooth="smooth" class="nav-link" href="#schedule">Schedule</a>
+						<a data-smooth="smooth" class="nav-link" href="#schedule">Agenda</a>
 					</li>
-					<a class="navbar-brand pull-sm-right m-r-0 hidden-xs-down" href="#"><img src="./img/iconic-logo.png"></a>
+					<li>
+						<a class="navbar-brand pull-sm-right m-r-0 hidden-xs-down" href="#"><img src="./img/iconic-logo.png"></a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -33,23 +32,34 @@
 		<div class="banner">
 		<div class="jumbotron jumbotron-fluid bg-info text-xs-center">
 			<div class="container">
-				<h1 class="display-2">iCONIC Boston</h1>
-				<h1 class="display-4">Online Event</h1>
-				<p class="lead m-t-3">One day. Countless icons. An unforgettable experience.</p>
-				<div class="btn-group" role="group" aria-label="Basic example">
-					<button type="button" class="btn register-now btn-lg text-xs-center" data-toggle="modal" data-target="#register">Register Now</button>
-					<a data-smooth="smooth" class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
+				<!-- <h1 class="display-2">iCONIC Boston</h1> -->
+				<img class="header-img" src="img/cnbc-iconic.png">
+				<h1 class="m-t-3"><!-- iCONIC --> Boston Virtual Event</h1>
+
+				<!-- <p class="lead">One day. Countless icons. An unforgettable experience. Register<br/> today for FREE and up your small business game by<br/> hearing insights LIVE from influential business leaders.</p> -->
+				<div class="btn-group m-t-3" role="group" aria-label="Basic example">
+					<button type="button" class="btn register-now btn-lg text-xs-center" data-toggle="modal" data-target="#register">Registration</button>
 				</div>
+				 
 			</div>
 		</div>	
 	</div>
 	<div class="container">
 	<section>
 		<div class="row">
-			<div class="col-xs-12 no-padding-xs">
-				<div class="container t-mobile-area m-b-3">
-					<div class="text-xs-center">
-						<img class="t-mobile-logo img-fluid" src="./img/tmobile.jpg"/>
+			<!-- <div class="col-xs-5 no-padding-xs">
+				
+			</div>	 -->
+			<div class="col-xs-12 no-padding-xs text-xs-center">
+			<h1 class="m-b-3"> innovate | inspire | ignite</h1>
+				<p class=" lead">Join us virtually for the last stop of the 2016 iCONIC Tour. iCONIC: Boston will be a hard-hitting one day event, presented by Inc. and CNBC, to ignite new ideas and be inspired by todays biggest business icons. Every session will challenge you to overturn conventional thinking and revolutionize the way you do business. You will discover what it takes to build a lasting brand, get tips on redefining your relationship with your customers, hear strategies on how to compete with giants, learn how to ignite change in your company and community and so much more!</p>
+				<h1 class="lead m-b-3">One day. Countless icons. An unforgettable experience.</h1> 
+			</div>
+		</div> <!-- ./end row -->	
+		<div class="row">
+		<div class="container t-mobile-area m-b-3">
+				<div class="text-xs-center">
+						<img class="t-mobile-logo img-fluid" src="./img/founding-sponsors.png"/>
 						<!-- <h2 class="lead display-4 m-t-2">Countdown</h2> -->
 					</div>
 					<ul class="col-md-12 p-t-2" id="countdown">
@@ -61,10 +71,11 @@
 					  <li class="seperator">:</li>
 					  <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
 					</ul><!-- /.end countdown -->
-				</div>
 			</div>
 		</div><!-- /.end row -->
-		<div id="speakers" class="row">
+		<div class="container">
+			<div id="speakers" class="row">
+		<h1 class="display-4 text-xs-center text-muted m-b-1">Speakers</h1>
 		  <div class="card-deck-wrapper m-b-2">
 			  <div class="card-deck">
 			  	<div class="col-md-6 p-l-0 p-r-0">
@@ -118,8 +129,10 @@
 		</div><!-- /.end row -->
 		</section>
 	</div> <!-- end container -->	
+		</div>
+		
 	<div class="secondary-speakers">
-	<section>
+	<section class="secondary">
 	<div class="container">
 		<div class="row">
 		  <div class="card-deck-wrapper m-b-2">
@@ -275,8 +288,8 @@
 	<div class="container">
 		<!-- schedule -->
 		<div class="col-xs-12">
-			<h1 id="schedule" class="display-4 text-xs-center m-b-3 text-muted">Schedule</h1>
-			<!-- <h1 class="display-6 text-xs-center m-t-0 m-b-3 text-muted">July 15, 2016</h1> -->
+			<h1 id="schedule" class="display-4 text-xs-center text-muted">Schedule</h1>
+			<h5 class="text-xs-center">Mark your calendar for the speakers that you would like to hear from</h5>
 			<ul class="list-group">
 				<li class="list-group-item">
 					<h4 class="list-group-item-heading">Keynote: XPOCAST Overview <span class="label presentation-time pull-xs-right">9:00am</span></h4>
@@ -347,7 +360,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title">Register for iCONIC</h4>
+						<h4 class="modal-title">Register today for FREE and up your small business game by hearing insights LIVE from influential business leaders.</h4>
 					</div>
 					<!-- <iframe id="QRegFrame"frameborder="0" src="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!51004&PageID=2C78C654-F796-4301-B55A-9E9D92D63196" width="500" height="1000" scrolling="no"></iframe> -->
 					<iframe id="QRegFrame"frameborder="0" src="https://vts.inxpo.com/Launch/QReg.htm?ShowKey=27032&GroupID=microsite" width="300" height="1000" scrolling="no"></iframe>
