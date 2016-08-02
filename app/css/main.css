@@ -257,6 +257,9 @@ ul.privacy li{
   display: inline-block;
   padding-right: 1rem;
 }
+ul.privacy a{
+  color: #d0dd28;
+}
 
 /***********************
 
