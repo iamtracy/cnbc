@@ -42,7 +42,7 @@ $('[data-smooth="smooth"]').on('click', function(event) {
   target = this.hash;
   event.preventDefault();
   var navOffset;
-  navOffset = 90;
+  navOffset = 89;
   return $('html, body').animate({
     scrollTop: $(this.hash).offset().top - navOffset
   }, 650, function() {
