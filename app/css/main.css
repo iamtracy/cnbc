@@ -28,6 +28,9 @@ ul, menu, dir {
 .brand-green{
   color: #d0dd28;
 }
+.presentation-time{
+  font-size: 1.2rem;
+}    
 /***********************
 
 Navigation
