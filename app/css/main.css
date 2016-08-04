@@ -79,10 +79,12 @@ Top Banner
 .bg-info {
     background:linear-gradient(rgba(0, 121 ,193 , .625), rgba(0, 121 ,193 , .625)), url("../img/banner.jpg"); 
     background-color: rgba(25, 159, 206, 0.75);
-    background-position: 60% 60%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    background-position: 60% 91%;
+    padding: 4.5rem 0 .5rem;
+    
 }
 .register-now{
   background: #e11075;
@@ -90,10 +92,6 @@ Top Banner
 .row {
     margin-right: 0;
     margin-left: 0;
-}
-.jumbotron {
-  padding: 4.5rem 0 .5rem;
-  margin-bottom: 0;
 }
 .innovate{
   color: #000;
@@ -317,9 +315,6 @@ Responsive layout
     .t-mobile-logo {
       top: -270px;
     }
-    .jumbotron {
-      padding: 4rem 1rem;
-    }
 }
 @media (min-width: 320px) and (max-width: 465px) {
     .t-mobile-logo {
@@ -339,7 +334,6 @@ Responsive layout
       padding-left: 0!important;
     }
     .jumbotron {
-      padding: 4rem 2rem;
       margin-bottom: 0;
     }
     .btn-group-lg>.btn, .btn-lg{
