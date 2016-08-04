@@ -293,6 +293,9 @@ Modal
 .modal-register{
   background-color: #0079C1;
 }
+iframe{
+  width: 100%;
+}
 
 /***********************
 
@@ -306,7 +309,6 @@ Responsive layout
 			padding-bottom: 10rem;
     }
 }
-
 @media (max-width: 768px) {
     /*.t-mobile-logo {
       top: -516px;
@@ -324,20 +326,21 @@ Responsive layout
 }
 @media (min-width: 320px) and (max-width: 465px) {
     .t-mobile-logo {
-      top: -370px;
+      top: -420px;
     }
 }
-
 @media (min-width: 0) and (max-width: 319px) {
     .t-mobile-logo {
       top: -420px;
     }
 }
-
 @media (max-width: 540px) {
     .no-padding-xs {
       padding-right: 0!important;
       padding-left: 0!important;
+    }
+    .navbar{
+      padding-left: 0;
     }
     .jumbotron {
       margin-bottom: 0;
@@ -363,7 +366,6 @@ Responsive layout
       padding: .55rem .55rem;
     }
 }
-
 @media (max-width:680px) {
     ul#countdown {
 		  list-style: none;
@@ -387,10 +389,8 @@ Responsive layout
 		  font-size: 1.8rem;
 		}
 }
-
 @media (min-width: 544px){
 	.card-deck .card {
-    /*width: 45%;*/
     margin-right: .9375rem;
     margin-left: .9375rem;
     padding-left: 0;
@@ -403,6 +403,10 @@ Responsive layout
   }
   .p-l-0 {
      padding-left: initial; 
+  }
 }
+@media (min-width: 0) and (max-width: 420px) {
+    .nav-register-now {
+      margin-left: 0;
+    }
 }
-
