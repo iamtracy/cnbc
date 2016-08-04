@@ -49,3 +49,17 @@ $('[data-smooth="smooth"]').on('click', function(event) {
     return window.history.pushState(null, null, target);
   });
 });
+
+
+
+$(window).scroll(function(){
+  var navHeight = $('nav').height();
+  var foo = $('.t-mobile-bar').height();
+  var tMobile = $('.t-mobile-bar').height();
+  var bannerHeight = $('.banner').height();
+  if ($(window).scrollTop() >= bannerHeight - tMobile - navHeight) {
+    $('#navReg').show(450, 'swing');
+  }else{
+    $('#navReg').hide(450);
+  }
+}); 

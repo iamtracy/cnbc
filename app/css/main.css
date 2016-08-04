@@ -70,24 +70,30 @@ nav{
 .navbar-dark .navbar-nav .open>.nav-link:hover{
   color: #d0dd28;
 }
-
+.nav-register-now{
+    margin-top: .106rem;
+    margin-left: 1rem;
+}
 /***********************
 
 Top Banner
 
 ***********************/
+.bg-padding{
+  padding: 4.5rem 0 .5rem;
+}
+
 .bg-info {
     background:linear-gradient(rgba(0, 121 ,193 , .625), rgba(0, 121 ,193 , .625)), url("../img/banner.jpg"); 
     background-color: rgba(25, 159, 206, 0.75);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-position: 60% 91%;
-    padding: 4.5rem 0 .5rem;
-    
+    background-position: 60% 91%;    
 }
 .register-now{
   background: #e11075;
+  color: #fff;
 }
 .row {
     margin-right: 0;
