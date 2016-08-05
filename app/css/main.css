@@ -90,9 +90,15 @@ Top Banner
     background-attachment: fixed; 
     background-position: 60% 91%;    
 }
-.register-now{
-  background: #fcd633;
+/*.register-now{
   color: #fff;
+  border-color: #fff;
+  background: #272524;
+}*/
+.register-now{
+  color: #d0dd28;
+  border-color: #d0dd28;
+  background: #272524;
 }
 .row {
     margin-right: 0;
