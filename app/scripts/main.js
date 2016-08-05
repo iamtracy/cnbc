@@ -4,17 +4,6 @@ date: '09/22/2016 09:00:00'
   alert('We\'re Live!');
 });
 
-// (function($) {
-//         $('.navbar').fadeOut(550);                        
-//         $(window).scroll(function(){                          
-//             if ($(this).scrollTop() > 10) {
-//                 $('.navbar').fadeIn(750);
-//             } else {
-//                 $('.navbar').fadeOut(500);
-//             }
-//         });
-//     })(jQuery);
-
 jQuery(function(){
     var minimized_elements = $('p.minimize');
     minimized_elements.each(function(){    
@@ -54,12 +43,21 @@ $('[data-smooth="smooth"]').on('click', function(event) {
 
 $(window).scroll(function(){
   var navHeight = $('nav').height();
-  var foo = $('.t-mobile-bar').height();
   var tMobile = $('.t-mobile-bar').height();
+  var navTmobile = navHeight + tMobile;
   var bannerHeight = $('.banner').height();
-  if ($(window).scrollTop() >= bannerHeight - tMobile - navHeight) {
-    $('#navReg').show(450, 'swing');
+  if ($(window).scrollTop() >= bannerHeight - navTmobile) {
+    if ($(this).width() < 480) {
+      $('#navReg').show()
+    } else {
+      $('#navReg').show(450, 'swing');
+    }
+    
   }else{
-    $('#navReg').hide(450);
+    if ($(window).width() < 480) {
+      $('#navReg').hide()
+    } else {
+      $('#navReg').hide(450);
+    }
   }
 }); 
