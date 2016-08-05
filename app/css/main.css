@@ -82,7 +82,6 @@ Top Banner
 .bg-padding{
   padding: 4.5rem 0 .5rem;
 }
-
 .bg-info {
     background:linear-gradient(rgba(0, 121 ,193 , .625), rgba(0, 121 ,193 , .625)), url("../img/banner.jpg"); 
     background-color: rgba(25, 159, 206, 0.75);
@@ -310,9 +309,10 @@ Responsive layout
     }
 }
 @media (max-width: 768px) {
-    /*.t-mobile-logo {
-      top: -516px;
-    }*/
+    .bg-info {
+      background-attachment: scroll; 
+      background-position: 60% 91%;    
+    }
 }
 @media (max-width: 680px) {
     .t-mobile-logo {
