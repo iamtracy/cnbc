@@ -51,18 +51,19 @@ $(window).scroll(function(){
   var tMobile = $('.t-mobile-bar').height();
   var navTmobile = navHeight + tMobile;
   var bannerHeight = $('.banner').height();
+  var navRegButton = $('#RegLinkNav');
   if ($(window).scrollTop() >= bannerHeight - navTmobile) {
     if ($(this).width() < 480) {
-      $('#navReg').show()
+      $(navRegButton).show()
     } else {
-      $('#navReg').show(450, 'swing');
+      $(navRegButton).show(450, 'swing');
     }
     
   }else{
     if ($(window).width() < 480) {
-      $('#navReg').hide()
+      $(navRegButton).hide()
     } else {
-      $('#navReg').hide(450);
+      $(navRegButton).hide(450);
     }
   }
 }); 
