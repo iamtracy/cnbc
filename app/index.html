@@ -7,8 +7,61 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<!-- AFFILIATE SCRIPT -->
+	<script type="text/javascript" src="https://vts.inxpo.com/cfr/scripts/XBrowser.js"></script>
+	<script type="text/javascript">
+
+	  var g_AffiliateData = GetURLParamValue("AffiliateData");
+	  
+	  /********UPDATE QUICK REGISTRATION LINK BETWEEN SINGLE QUOTES********/
+	  var g_iFrameRegUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC';
+	  var g_iFrameRegFinalUrlSrc = g_iFrameRegUrlSrc + '&AffiliateData=' + g_AffiliateData;
+	  
+	  var g_HomeUrlSrc = 'home.html';
+	  var g_HomeFinalUrlSrc = g_HomeUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+
+	  // var g_SpeakersUrlSrc = 'OnDemand.html';
+	  // var g_SpeakersFinalUrlSrc = g_SpeakersUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+	  // // var g_SponsorsUrlSrc = 'LoginPage.html';
+	  // // var g_SponsorsFinalUrlSrc = g_SponsorsUrlSrc + '?AffiliateData=' + g_AffiliateData;
+	  
+	  // var g_LegalUrlSrc = 'LegalNotice.html';
+	  // var g_LegalFinalUrlSrc = g_LegalUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+	  var g_RegistrationUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC';
+	  var g_RegistrationFinalUrlSrc = g_RegistrationUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+	  
+	  function window_onload()
+	  {
+	    if (g_AffiliateData == ""){  
+	    document.getElementById("QRegFrame").src = g_iFrameRegUrlSrc;
+	    // document.getElementById("OverviewLink").href = g_HomeUrlSrc;
+	    // document.getElementById("OverviewLinkLogo").href = g_HomeUrlSrc;
+	    // document.getElementById("AgendaLink").href = g_AgendaUrlSrc;
+	    // document.getElementById("SpeakersLink").href = g_SpeakersUrlSrc;
+	    // document.getElementById("SponsorsLink").href = g_SponsorsUrlSrc;
+	    // document.getElementById("FAQLink").href = g_FAQUrlSrc;
+	    // document.getElementById("LegalLink").href = g_LegalUrlSrc;
+	    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
+		document.getElementById("RegLinkBanner").href = g_RegistrationUrlSrc;
+	    }
+	    else{
+	    document.getElementById("QRegFrame").src = g_iFrameRegFinalUrlSrc;
+	    //document.getElementById("OverviewLink").href = g_HomeFinalUrlSrc;
+	    //document.getElementById("OverviewLinkLogo").href = g_HomeFinalUrlSrc;
+	    //document.getElementById("SponsorsLink").href = g_SponsorsFinalUrlSrc;
+	    //document.getElementById("LegalLink").href = g_LegalFinalUrlSrc;
+	    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
+		document.getElementById("RegLinkBanner").href = g_RegistrationUrlSrc;         
+	    }
+	  }
+	</script>
+	<!-- END AFFILIATE SCRIPT -->
 </head>
-<body data-spy="scroll" data-target=".navbar" id="home" data-offset="115">
+<body onload="window_onload()" data-spy="scroll" data-target=".navbar" id="home" data-offset="115">
 	<nav class="navbar navbar-dark nav-color navbar-fixed-top navbar-collapse">
 		<div class="container">
 			<div id="menu" class="col-xs-12">
@@ -149,7 +202,7 @@
 			      <img class="card-img-top img-fluid" src="./img/julie-rice.png" alt="Card image cap">
 			      <div class="card-block">
 			        <h4 class="card-title">Julie Rice</h4>
-			        <p class="card-text minimize">Julie Rice and her partner Elizabeth Cutler founded SoulCycle on the belief that fitness should be inspiring. Their vision of a motivational 45-minute indoor-cycling workout combined with a chic branded environment, and "above and beyond" customer service came to life in 2006. Today, SoulCycle currently has 64 locations nationwide. Julie has been honored as one of Goldman Sachs’ 100 Builders + Innovators in 2013 and 2014, and SoulCycle was voted one of the World's Top 10 Most Innovative Companies in Fitness of 2013 by Fast Company. In 2015, Julie was voted one of Fast Company's Most Creative People in Business.</p>
+			        <p class="card-text minimize">Julie Rice and her partner Elizabeth Cutler founded SoulCycle on the belief that fitness should be inspiring. Their vision of a motivational 45-minute indoor-cycling workout combined with a chic branded environment, and "above and beyond" customer service came to life in 2006. Today, SoulCycle currently has 64 locations nationwide. Julie has been honored as one of Goldman Sachs' 100 Builders + Innovators in 2013 and 2014, and SoulCycle was voted one of the World's Top 10 Most Innovative Companies in Fitness of 2013 by Fast Company. In 2015, Julie was voted one of Fast Company's Most Creative People in Business.</p>
 			      </div>
 			    </div>
 			    </div>
@@ -239,30 +292,11 @@
 			      </div>
 			    </div>
 			  	</div>
-			  	<!-- <div class="col-md-4 p-l-0 p-r-0">
-			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="./img/john-gazing.png" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">John Gazing</h4>
-			        <p class="card-text minimize">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum euismod risus vel consequat. Nulla non dolor et leo varius efficitur vel eget ligula. Mauris mattis imperdiet ante, quis accumsan sapien hendrerit sed. Suspendisse massa justo, viverra et tortor eget, luctus faucibus est. Etiam fringilla id erat vel condimentum. Nulla quam ligula, congue a elit in, lacinia varius velit. Aliquam in tortor quam. Sed feugiat elit et bibendum vulputate. Mauris interdum, nisi id ornare blandit, libero odio sollicitudin lectus, vitae hendrerit neque dolor at ipsum. Nullam lectus tortor, maximus eget mattis vel, ultricies sit amet dolor. Donec pellentesque, tellus sed ultricies eleifend, turpis nisi sagittis turpis, a vestibulum nisi nunc at ante. Suspendisse potenti.</p>
-			      </div>
-			    </div>
-			  	</div> -->
-			  	<!-- <div class="col-md-4 p-l-0 p-r-0">
-			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="./img/ragy-thomas.png" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Ragy Thomas</h4>
-			        <p class="card-text minimize">Ragy Thomas is a technology visionary, entrepreneur, and investor who has played an instrumental role in the evolution of two business-critical channels for the enterprise: social media and email. As founder and CEO of Sprinklr - the world's most complete enterprise social technology serving more than 1,000 enterprise brands globally - he is empowering companies to reimagine their customer-facing operations to manage consumer experiences across every touch point.</p>
-			      </div>
-			    </div>
-			  	</div> -->
-			    
 			  </div>
 			</div>
 		</div><!-- /.end row -->
 		<div class="row">
-		  <div class="card-deck-wrapper m-b-2">
+		  <div class="card-deck-wrapper">
 			  <div class="card-deck">
 			  	<div class="col-md-4 p-l-0 p-r-0">
 			    	<div class="card">
@@ -420,58 +454,5 @@
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
-<!-- AFFILIATE SCRIPT -->
-<script type="text/javascript" src="https://vts.inxpo.com/cfr/scripts/XBrowser.js"></script>
-<script type="text/javascript">
-
-  var g_AffiliateData = GetURLParamValue("AffiliateData");
-  
-  /********UPDATE QUICK REGISTRATION LINK BETWEEN SINGLE QUOTES********/
-  var g_iFrameRegUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC';
-  var g_iFrameRegFinalUrlSrc = g_iFrameRegUrlSrc + '&AffiliateData=' + g_AffiliateData;
-  
-  var g_HomeUrlSrc = 'home.html';
-  var g_HomeFinalUrlSrc = g_HomeUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-
-  // var g_SpeakersUrlSrc = 'OnDemand.html';
-  // var g_SpeakersFinalUrlSrc = g_SpeakersUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-  // // var g_SponsorsUrlSrc = 'LoginPage.html';
-  // // var g_SponsorsFinalUrlSrc = g_SponsorsUrlSrc + '?AffiliateData=' + g_AffiliateData;
-  
-  // var g_LegalUrlSrc = 'LegalNotice.html';
-  // var g_LegalFinalUrlSrc = g_LegalUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-  // var g_RegistrationUrlSrc = 'registration.html';
-  // var g_RegistrationFinalUrlSrc = g_RegistrationUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-  
-  function window_onload()
-  {
-    if (g_AffiliateData == ""){  
-    document.getElementById("QRegFrame").src = g_iFrameRegUrlSrc;
-    // document.getElementById("OverviewLink").href = g_HomeUrlSrc;
-    // document.getElementById("OverviewLinkLogo").href = g_HomeUrlSrc;
-    // document.getElementById("AgendaLink").href = g_AgendaUrlSrc;
-    // document.getElementById("SpeakersLink").href = g_SpeakersUrlSrc;
-    // document.getElementById("SponsorsLink").href = g_SponsorsUrlSrc;
-    // document.getElementById("FAQLink").href = g_FAQUrlSrc;
-    // document.getElementById("LegalLink").href = g_LegalUrlSrc;
-    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
-		document.getElementById("RegLinkBanner").href = g_RegistrationUrlSrc;
-    }
-    else{
-    document.getElementById("QRegFrame").src = g_iFrameRegFinalUrlSrc;
-    //document.getElementById("OverviewLink").href = g_HomeFinalUrlSrc;
-    //document.getElementById("OverviewLinkLogo").href = g_HomeFinalUrlSrc;
-    //document.getElementById("SponsorsLink").href = g_SponsorsFinalUrlSrc;
-    //document.getElementById("LegalLink").href = g_LegalFinalUrlSrc;
-    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
-		document.getElementById("RegLinkBanner").href = g_RegistrationUrlSrc;         
-    }
-  }
-</script>
-<!-- END AFFILIATE SCRIPT -->
 </body>
 </html>
