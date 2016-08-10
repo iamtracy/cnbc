@@ -3,9 +3,13 @@
 Body
 
 ***********************/
-a{
+a,
+a:hover,
+a:visited,
+a:active{
   color: #e11075;
 }
+
 section{
   padding: 1.6rem 0;
 }
@@ -30,7 +34,32 @@ ul, menu, dir {
 }
 .presentation-time{
   font-size: 1.2rem;
-}    
+}  
+.italic{
+  font-family: 'Roboto', sans-serif; 
+  font-style:italic;
+}
+.card-max{
+  max-height: 200px;
+  overflow-y: hidden;
+}
+.card-block{
+  cursor: pointer;
+}
+.card{
+  position: relative;
+}
+.read-more{
+  position: absolute; 
+  bottom: -5px;
+  right: 2px;
+  width: 100%; 
+  text-align: right; 
+  margin: 0;
+}
+.display-none{
+  display: none;
+}
 /***********************
 
 Navigation

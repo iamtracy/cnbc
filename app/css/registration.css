@@ -1,11 +1,10 @@
 /*Reg Fields
 ***********************/
-
-.QuickRegistrationRow {
-    margin: 1em 0;
+.QuickRegistrationTable {
+    margin: 0px auto 0px 10px !important;
 }
-
-input {
+input,
+select {
     background-color: #eaeaea;
     padding: 0.8em;
     margin: 0.4em 0;
@@ -19,29 +18,30 @@ input {
     padding: 13px;
     border-radius: 4px;
 }
-
 div[labelcell="1"] {
     clear: both;
     display: block;
     margin: 1rem 0;
 }
-
-input:focus {
-    outline: -webkit-focus-ring-color auto 5px;
+input:focus,
+select:focus {
+    border: 1px solid #e11075;
 }
-
 input[type="submit"] {
     -webkit-appearance: none;
     font-size: 1rem;
     font-weight: bold;
-    color: #ffffff;
-    width: 100%;
+    color: #fff;
+    background: #0079c1;
+    width: 111%;
     padding: 1em 0;
     margin: 40px auto;
     border: none;
     cursor: pointer;
 }
-
+select{
+    width: 111%;
+}
 input[name="EMailAddress"]{
-	background-image: none !important;
+    background-image: none !important;
 }
