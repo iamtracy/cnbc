@@ -275,7 +275,7 @@ Cards
 
 ***********************/
 .card-deck-wrapper{
-  /*margin-bottom: 2.25rem;*/
+  margin-bottom: 1rem;
 }
 .card-img-top{
   width:100%;
@@ -447,4 +447,17 @@ Responsive layout
     .nav-register-now {
       margin-left: 0;
     }
+}
+@media (min-width: 0) and (max-width: 425px) {
+  .bg-padding {
+    padding: 6.5rem 0 .5rem;
+  }
+}
+@media (min-width: 0) and (max-width: 768px) {
+  .presentation-time {
+      display: block;
+      margin-right: 100%;
+      margin-top: .35rem;
+      margin-bottom: .35rem;
+  }
 }
