@@ -77,10 +77,10 @@
 						<a data-smooth="smooth" class="nav-link" href="#agenda">Agenda</a>
 					</li>
 					<li>
-							<button id="RegLinkNav" style="display: block;" type="button" class="btn register-now nav-register-now btn-md pull-xs-left pull-md-right" data-toggle="modal" data-target="#register">Register Now</button>
+							<button id="RegLinkNav" style="display: none;" type="button" class="btn register-now nav-register-now btn-md pull-xs-left pull-md-right" data-toggle="modal" data-target="#register">Free Registration</button>
 					</li>
 					<li>
-						<a class="navbar-brand pull-sm-right m-r-0" href="#"><img src="./img/iconic-logo.png"></a>
+						<a class="navbar-brand pull-xs-left pull-md-right m-r-0" href="#"><img src="./img/iconic-logo.png"></a>
 					</li>
 				</ul>
 			</div>
@@ -92,7 +92,7 @@
 				<img class="header-img text-xs-center" src="img/cnbc-iconic.png"/>
 				<div class="row">
 					<div class="btn-group m-t-3" role="group" aria-label="Basic example">
-						<button id="RegLinkBanner" type="button" class="btn register-now btn-lg text-xs-center" data-toggle="modal" data-target="#register">Register Now</button>
+						<button id="RegLinkBanner" type="button" class="btn register-now btn-lg text-xs-center" data-toggle="modal" data-target="#register">Free Registration</button>
 					</div>	
 				</div>
 				<h3 class="m-t-2 m-b-0 innovate boston-virtual">innovate | inspire | ignite</h3>
@@ -182,7 +182,7 @@
 			    </div>
 			  	</div>
 			    <div class="col-md-6 p-l-0 p-r-0">
-			  		<div class="card">
+			  		<div class="card m-b-0">
 			      <img class="card-img-top img-fluid" src="./img/greg-glassman.png" alt="Card image cap">
 			      <div class="card-block">
 			        <h4 class="card-title">Greg Glassman</h4>
@@ -202,7 +202,7 @@
 	<div class="container">
 		<div class="row">
 		  <div class="card-deck-wrapper">
-			  <div class="card-deck">
+			  <div class="card-deck m-b-1">
 			  <div class="col-md-4 p-l-0 p-r-0">
 			    <div class="card">
 			      <img class="card-img-top img-fluid" src="./img/julie-rice.png" alt="Card image cap">
@@ -238,7 +238,7 @@
 		</div><!-- /.end row -->
 		<div class="row">
 		  <div class="card-deck-wrapper">
-			  <div class="card-deck">
+			  <div class="card-deck m-b-1">
 			  <div class="col-md-4 p-l-0 p-r-0">
 			  		<div class="card">
 			      <img class="card-img-top img-fluid" src="./img/danae_Ringelmann.png" alt="Card image cap">
@@ -275,7 +275,7 @@
 		</div><!-- /.end row -->
 		<div class="row">
 		  <div class="card-deck-wrapper">
-			  <div class="card-deck">
+			  <div class="card-deck m-b-1">
 			  <div class="col-md-4 p-l-0 p-r-0">
 			    	<div class="card">
 			      <img class="card-img-top img-fluid" src="./img/bryn-mooser.png" alt="Card image cap">
@@ -311,7 +311,7 @@
 		</div><!-- /.end row -->
 		<div class="row">
 		  <div class="card-deck-wrapper m-b-0">
-			  <div class="card-deck">
+			  <div class="card-deck ">
 			  	<div class="col-md-4 p-l-0 p-r-0">
 			    	<div class="card">
 			      <img class="card-img-top img-fluid" src="./img/adam-miller.png" alt="Card image cap">
@@ -333,7 +333,7 @@
 			    </div>
 			  	</div>
 			  	<div class="col-md-4 p-l-0 p-r-0">
-			  		<div class="card">
+			  		<div class="card m-b-0">
 			      <img class="card-img-top img-fluid" src="./img/kate-rogers.png" alt="Card image cap">
 			      <div class="card-block">
 			        <h4 class="card-title">Kate Rogers</h4>
@@ -406,7 +406,7 @@
 			  </li>
 			  <li class="list-group-item list-group-item-info">
 					<h5 class="list-group-item-heading ">Break<span class="label presentation-time pull-xs-left pull-md-right">3:25 pm</span></h5>
-					<p class="minimize">Be sure not to miss "What I Learned From My Million-Dollar Pay Cut"</p>
+					<h6>Be sure not to miss "What I Learned From My Million-Dollar Pay Cut"</h6>
 			  </li>
 			  <li class="list-group-item">
 					<h5 class="list-group-item-heading">IGNITE<br/>What I Learned From My Million-Dollar Pay Cut<span class="label presentation-time pull-xs-left pull-md-right">4:00 pm</span></h5>
@@ -415,7 +415,7 @@
 			  </li>
 			  <li class="list-group-item list-group-item-info">
 					<h5 class="list-group-item-heading">Major Keynote Address To Be Announced!<span class="label presentation-time pull-xs-left pull-md-right">4:40 pm</span></h5>
-					<p class="minimize">Coming Soon</p>
+					<h6>Coming Soon</h6>
 			  </li>
 			</ul><!-- /schedule -->
 		</div>
@@ -442,6 +442,7 @@
 			</div>
 		</div>
 	</footer>
+	<img id="fixedLogo" class="img-fluid fixed-logo" style="display: none;" src="./img/founding-sponsors-transparent.png"/>
 	
 	</div><!-- /.end main container -->
 	<!--===================================

@@ -150,6 +150,13 @@ Top Banner
     padding-top: 1.2rem;
     padding-bottom: 1.1rem;
 }
+.fixed-logo{
+  position: fixed;
+  width: 7.5%;
+  min-width: 100px;
+  left: 10px;
+  bottom: 10px;
+}
 .t-mobile img {
     height: 26px;
     width: auto;
@@ -274,9 +281,9 @@ WHAT PEOPLE ARE SAYING
 Cards
 
 ***********************/
-.card-deck-wrapper{
+/*.card-deck-wrapper{
   margin-bottom: 1rem;
-}
+}*/
 .card-img-top{
   width:100%;
   height:auto;

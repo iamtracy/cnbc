@@ -23,7 +23,7 @@
     var navOffset;
     if(theWindow > 420){
       navOffset = 90
-    } else{
+    }else{
       navOffset = 126;
     } 
     return $('html, body').animate({
@@ -38,7 +38,10 @@
     var navTmobile = navHeight + tMobile;
     var bannerHeight = $('.banner').height();
     var navRegButton = $('#RegLinkNav');
+    var fixedLogo = $('#fixedLogo'); 
+
     if ($(window).scrollTop() >= bannerHeight - navTmobile) {
+      fixedLogo.show(450, 'swing')
       if ($(this).width() < 480) {
         $(navRegButton).show()
       } else {
@@ -47,8 +50,10 @@
     }else{
       if ($(window).width() < 480) {
         $(navRegButton).hide()
+        fixedLogo.hide(450, 'swing')
       } else {
         $(navRegButton).hide(450);
+        fixedLogo.hide(450, 'swing')
       }
     }
   }); 
