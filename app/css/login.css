@@ -1,0 +1,32 @@
+body{
+    background-position: left 250px;
+}
+
+.container {
+    padding: 4rem 0;
+}
+.header-img{
+    max-width: 540px;  
+}
+.innovate {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 1.75rem !important;
+    left: 0%;
+}
+.bg-info {
+    padding: 4rem 0;
+    position: relative;
+}
+input:focus,
+select:focus {
+    border: 1px solid #e11075;
+}
+input, select, .LoginInput {
+    border: 1px solid #948e8e;
+}
+.bg-info {
+    background-attachment: initial; 
+    background-position: 60% 59%;
+}

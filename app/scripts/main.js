@@ -38,22 +38,24 @@
     var navTmobile = navHeight + tMobile;
     var bannerHeight = $('.banner').height();
     var navRegButton = $('#RegLinkNav');
-    var fixedLogo = $('#fixedLogo'); 
+    var fixedLogo = $('#fixedLogo');
+    var fixedLogoNav = $('#fixedLogoNav'); 
 
     if ($(window).scrollTop() >= bannerHeight - navTmobile) {
-      fixedLogo.show(450, 'swing')
-      if ($(this).width() < 480) {
-        $(navRegButton).show()
-      } else {
-        $(navRegButton).show(450, 'swing');
-      } 
-    }else{
-      if ($(window).width() < 480) {
-        $(navRegButton).hide()
-        fixedLogo.hide(450, 'swing')
-      } else {
-        $(navRegButton).hide(450);
-        fixedLogo.hide(450, 'swing')
+        if ($(this).width() < 480) {
+          navRegButton.show();
+          fixedLogoNav.show();
+        } else {
+          navRegButton.show(450, 'swing');
+          fixedLogo.show(450, 'swing');
+        } 
       }
+    else{
+        if ($(window).width() < 480) {
+          navRegButton.hide();
+          fixedLogo.hide();
+        } else {
+          navRegButton.hide(450);
+        }
     }
   }); 

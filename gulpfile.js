@@ -1,7 +1,5 @@
   var gulp = require('gulp'),
-    serve = require('gulp-live-server'),
-    sourcemaps = require('gulp-sourcemaps'),
-    sass = require('gulp-sass');
+    serve = require('gulp-live-server');
 
   gulp.task('serve', function() {
     //2. serve at custom port 
@@ -13,16 +11,6 @@
     });
   });//end serve
 
-  // gulp.task('sass', function () {
-  //   return gulp.src('./sass/**/*.scss')
-  //     .pipe(sass().on('error', sass.logError))
-  //     .pipe(gulp.dest('./app/css'));
-  // });
- 
-  // gulp.task('sass:watch', function () {
-  //   gulp.watch('./sass/**/*.scss', ['sass']);
-  // });//end sass
-
-  gulp.task('default', ['sass'], function() {
+  gulp.task('default', function() {
     //other stuff
   });

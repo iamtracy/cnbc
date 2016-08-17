@@ -103,6 +103,9 @@ nav{
     margin-top: .106rem;
     margin-left: 1rem;
 }
+.register-now{
+  margin-left: 1rem;
+}
 /***********************
 
 Top Banner
@@ -355,6 +358,7 @@ Responsive layout
       background-attachment: scroll; 
       background-position: 60% 91%;    
     }
+    
 }
 @media (max-width: 680px) {
     .t-mobile-logo {
@@ -404,6 +408,14 @@ Responsive layout
     }
     div#menu {
       padding-left: 0;
+    }
+}
+@media (max-width: 455px) {
+    .nav-register-now {
+      margin-left: 0;
+    }
+    .nav-logo{
+      width: 100%
     }
 }
 @media (max-width: 320px) {
@@ -467,4 +479,5 @@ Responsive layout
       margin-top: .35rem;
       margin-bottom: .35rem;
   }
+  
 }
