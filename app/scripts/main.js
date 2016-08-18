@@ -8,13 +8,12 @@
     var t = $(this).height();
       if (t > 200) {
         card.addClass('card-max');
-    }  
-    card.click(function (e) {
+    }
+  }).click(function (e) {
       e.preventDefault();
       $(this).toggleClass("card-max");
       $(this).find('i').toggleClass('fa-minus-square-o fa-plus-square-o');
-    });
-  }); 
+    });; 
   $('[data-smooth="smooth"]').on('click', function(event) {
     var target;
     var theWindow = $(window).width();
