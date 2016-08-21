@@ -15,6 +15,9 @@ select {
     padding: 13px;
     border-radius: 4px;
 }
+.QuickRegistrationTable {
+    margin: 0px auto 0px 12px;
+}
 div[labelcell="1"] {
     clear: both;
     display: block;
